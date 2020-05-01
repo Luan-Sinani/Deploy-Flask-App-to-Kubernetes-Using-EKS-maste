@@ -1,0 +1,3 @@
+FROM  Luan-Sinani
+
+ENTRYPOINT ["echo", "hello world"]
