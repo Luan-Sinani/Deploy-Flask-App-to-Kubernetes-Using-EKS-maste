@@ -6,7 +6,7 @@
             "Sid": "Enable IAM User Permissions",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::972131414640:root"
+                "AWS": "arn:aws:eks:us-east-1:972131414640:cluster/udacity"
             },
             "Action": "kms:*",
             "Resource": "*"
@@ -15,7 +15,7 @@
             "Sid": "Allow access for Key Administrators",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::972131414640:role/eks-udacity"
+                "AWS": "arn:aws:eks:us-east-1:972131414640:cluster/udacity"
             },
             "Action": [
                 "kms:Create*",
@@ -39,7 +39,7 @@
             "Sid": "Allow use of the key",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::972131414640:role/eks-udacity"
+                "AWS": "arn:aws:eks:us-east-1:972131414640:cluster/udacity"
             },
             "Action": [
                 "kms:Encrypt",
@@ -54,7 +54,7 @@
             "Sid": "Allow attachment of persistent resources",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::972131414640:role/eks-udacity"
+                "AWS": "arn:aws:eks:us-east-1:972131414640:cluster/udacity"
             },
             "Action": [
                 "kms:CreateGrant",
